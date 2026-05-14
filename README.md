@@ -1,12 +1,12 @@
 # Rosco AI — iMessage Chief of Staff
 
-Rosco is a personal AI chief of staff that lives in iMessage. It manages my emails, tracks job opportunities, monitors my calendar, and sends daily briefings — all through a simple text conversation. Built on Claude with persistent memory that learns my preferences over time.
+Rosco is a personal AI chief of staff that lives in iMessage. It manages my emails, tracks job opportunities, monitors my calendar, and sends daily briefings, all through a simple text conversation. Built on Claude with persistent memory that learns my preferences over time.
 
 ---
 
 ## Why I Built It
 
-I was constantly switching between Gmail, my calendar, and job boards — and still missing things that mattered. Important emails were slipping through. Application deadlines were passing before I even saw the listing. And every AI tool I tried reset the moment a conversation ended, so I was re-explaining myself every single time.
+I was constantly switching between Gmail, my calendar, and job boards, and still missing things that mattered. Important emails were slipping through. Application deadlines were passing before I even saw the listing. And every AI tool I tried reset the moment a conversation ended, so I was re-explaining myself every single time.
 
 I wanted something that knew me, remembered everything, and felt natural to use. Nothing is more natural than iMessage. So I built Rosco there.
 
@@ -17,7 +17,7 @@ I wanted something that knew me, remembered everything, and felt natural to use.
 - Summarizes my inbox daily and flags anything I may have missed
 - Sends a list of internship and job postings from the last 24 hours every morning
 - Answers questions about my calendar without me opening Google Calendar
-- Remembers context across conversations — new chat, same Rosco
+- Remembers context across conversations, new chat, same Rosco
 
 ---
 
@@ -51,7 +51,7 @@ SendBlue ──────────────────────► C
 | Convex | Backend + database | Serverless, real-time, handles webhook routing and memory storage |
 | Composio | Integration layer | Connected Gmail, Calendar, and GitHub without building direct OAuth flows for each |
 | Claude (Anthropic) | AI model | Best-in-class instruction following and context handling |
-| Boop Agent SDK | Memory + behavior layer | Open-source Claude wrapper with persistent memory — saved building this from scratch |
+| Boop Agent SDK | Memory + behavior layer | Open-source Claude wrapper with persistent memory, saved building this from scratch |
 
 ---
 
@@ -71,10 +71,10 @@ The whole point was friction removal. Building a standalone app would have added
 ## What Broke
 
 **Webhook pipeline failure**
-Initially Rosco wasn't returning any responses at all after setup. The issue was in the webhook connection between SendBlue and Convex — the pipeline wasn't firing correctly. Tracing the request flow and fixing the webhook configuration resolved it.
+Initially Rosco wasn't returning any responses at all after setup. The issue was in the webhook connection between SendBlue and Convex, the pipeline wasn't firing correctly. Tracing the request flow and fixing the webhook configuration resolved it.
 
 **Memory layer corruption**
-The memory layer built on Convex was getting corrupted, which caused Rosco to break mid-conversation and lose context entirely. The issue was in how memory was being written and read from the Convex database — fixing the schema and storage logic resolved it.
+The memory layer built on Convex was getting corrupted, which caused Rosco to break mid-conversation and lose context entirely. The issue was in how memory was being written and read from the Convex database, fixing the schema and storage logic resolved it.
 
 ---
 
