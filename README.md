@@ -21,6 +21,23 @@ I wanted something that knew me, remembered everything, and felt natural to use.
 
 ---
 
+## In Action
+
+<table>
+  <tr>
+    <td><img src="screenshots/01-inbox-check.jpeg" width="220" alt="Rosco checking the inbox"/></td>
+    <td><img src="screenshots/02-internship-briefing.jpeg" width="220" alt="Daily internship briefing"/></td>
+    <td><img src="screenshots/03-book-recommendations.jpeg" width="220" alt="Book recommendations"/></td>
+  </tr>
+  <tr>
+    <td align="center">Inbox check</td>
+    <td align="center">Morning internship briefing</td>
+    <td align="center">Everyday requests</td>
+  </tr>
+</table>
+
+---
+
 ## Architecture
 
 ```
@@ -95,4 +112,4 @@ Built with [Boop Agent SDK](https://github.com/raroque/boop-agent) by raroque �
 
 ---
 
-*Built by [Rohan Harishchandrakar](https://linkedin.com/in/rohan-harishchandrakar) · [Portfolio](https://r07h2003.github.io/Rohan-)*
+*Built by [Rohan Harishchandrakar](https://linkedin.com/in/rohan-harishchandrakar) · [Portfolio](https://r07h2003.github.io)*
